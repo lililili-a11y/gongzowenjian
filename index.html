@@ -1,0 +1,52 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>视频播放网页</title>  
+    <link rel="stylesheet" href="styles.css">  
+    <style>  
+        .video-container {  
+            position: relative; /* 设置为相对定位 */  
+            width: 800px; /* 或你想要的宽度 */
+            height: 700px;  
+            /* 如果你想要视频容器有固定的高度，可以在这里设置 */  
+        }  
+  
+        video {  
+            width: 720px; /* 视频宽度填满容器 */  
+            height: 620px; /* 视频高度自动调整以保持宽高比 */ 
+            
+        }  
+  
+        .custom-select {  
+            position: absolute; /* 设置为绝对定位 */  
+            top: 10px; /* 距容器顶部10px */  
+            right: 10px; /* 距容器右侧10px */  
+            width: 180px; /* 设置下拉框的宽度 */  
+            padding: 5px; /* 设置内边距 */  
+            font-size: 13px; /* 设置字体大小 */  
+            /* 其他样式... */  
+        }  
+  
+        /* 注意：不要在<option>标签中使用selected属性多次，只有一个应该是选中的 */  
+    </style> 
+</head>  
+<body>  
+  
+<div class="video-container">  
+    <video id="myVideo"  controls>  
+        <source src="C:\Users\25053\Downloads\Compressed\N_m3u8DL-CLI_v3.0.2_with_ffmpeg_and_SimpleG\Downloads\7数-专题1 有理数综合——概念辨析-考点导入.mp4" type="video/mp4"> <!-- 替换为实际视频URL -->  
+        您的浏览器不支持Video标签。  
+    </video>  
+    <select id="videoSelect" class="custom-select">  
+        <option value="C:\Users\25053\Downloads\Compressed\N_m3u8DL-CLI_v3.0.2_with_ffmpeg_and_SimpleG\Downloads\7数-专题1 有理数综合——概念辨析-考点导入.mp4" selected>7数-专题1 有理数综合——概念辨析-考点导入</option>  
+        <!-- 如果有更多视频，可以在这里添加更多<option>标签 -->  
+        <option value="C:\Users\25053\Downloads\Compressed\N_m3u8DL-CLI_v3.0.2_with_ffmpeg_and_SimpleG\Downloads\7数-第一章 第一节 有理数的有关概念-知识梳理.mp4" selected>&nbsp;&nbsp;&nbsp;&nbsp;7数-第一章 第一节 有理数的有关概念-知识梳理</option> 
+        <option value="C:\Users\25053\Downloads\Compressed\N_m3u8DL-CLI_v3.0.2_with_ffmpeg_and_SimpleG\Downloads\7数-第一章 第一节 有理数的有关概念-知识梳理.mp4" selected>7数-第一章 第一节 有理数的有关概念-知识梳理实验版本</option>      
+    </select>  
+</div>  
+  
+<script src="script.js"></script>  
+</body>  
+</html>

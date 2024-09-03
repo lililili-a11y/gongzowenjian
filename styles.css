@@ -1,0 +1,38 @@
+body {  
+    font-family: Arial, sans-serif;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    margin: 0;  
+    background-color: #f0f0f0; /* 浅灰色背景 */  
+/*  background-image: url('your-image-path.jpg'); 
+            background-size: cover;  
+            background-position: center;  
+            如果需要，设置背景图片不随页面滚动 
+            background-attachment: fixed;  */
+
+
+}  
+  
+.video-container {  
+    text-align: center;  
+
+    background-color: black; /* 白色背景 */  
+    border-radius: 8px; /* 圆角边框 */  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */  
+}  
+  
+select {  
+    margin-top: 10px;  
+}
+.custom-select {  
+    width: 180px; /* 设置下拉框的宽度 */  
+    padding: 3px; /* 设置内边距 */  
+    font-size: 13px; /* 设置字体大小 */  
+    color:deeppink;
+    background-color:#f0f0f0; /* 设置下拉框的背景颜色为浅灰色 */    
+    border: 1px solid #ccc; /* 可选：设置边框 */    
+    border-radius: 4px; /* 可选：设置边框圆角 */ 
+    /* 其他样式... */  
+}
